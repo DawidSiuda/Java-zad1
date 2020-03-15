@@ -19,7 +19,7 @@ public class Main {
 
 //		System.out.print("Hello world");
 
-		List<IntElement> list = new ArrayList<IntElement>();
+		List<IElement> list = new ArrayList<IElement>();
 		Random rand = new Random();
 
 //		// Set list.
@@ -41,7 +41,7 @@ public class Main {
 
 		// Print list
 		int line = 15;
-		for (IntElement var : list)
+		for (IElement var : list)
 		{
 
 		    System.out.print(var.getValue() + "  ");
@@ -55,16 +55,21 @@ public class Main {
 
 		// Sort list.
 
-		IntSorter intSorter = new IntSorter();
+//		IntSorter intSorter = new IntSorter();
+//
+//		list = intSorter.solve(list);
 
-		list = intSorter.solve(list);
+		FloatSorterQuick intSorter = new FloatSorterQuick();
+
+		list = intSorter.solve2(list);
+
 
 		// print sorted list.
 
 		// Print list
 		line = 15;
 		System.out.println("\n\n");
-		for (IntElement var : list)
+		for (IElement var : list)
 		{
 
 		    System.out.print(var.getValue() + "  ");
