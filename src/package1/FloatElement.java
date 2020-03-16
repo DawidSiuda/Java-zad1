@@ -9,16 +9,22 @@ public class FloatElement implements IElement<Float> {
 	/**
 	 *  Constructor.
 	 */
-	FloatElement()
+	public FloatElement()
 	{
 		name = "name";
 		value = (float) 0;
 	}
 	/**
 	 * Constructor with initialize value.
-	 * @param aval
+	 * @param aval initialize main value
 	 */
-	FloatElement(Float aval)
+	public FloatElement(Float aval)
+	{
+		name = "name";
+		value = aval;
+	}
+
+	public FloatElement(Float aval, String aString)
 	{
 		name = "name";
 		value = aval;
@@ -48,7 +54,6 @@ public class FloatElement implements IElement<Float> {
 	private Float value;
 
 	/**
-	 * @param first number
 	 * @param second second number;
 	 * @return -1 if the is smaller, 0 if equal, 1 if is greater.
 	 */

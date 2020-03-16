@@ -11,7 +11,7 @@ import java.util.Random;
 public class Main {
 	/**
 	 * Main function.s
-	 * @param args
+	 * @param args Starting parameters.
 	 */
 	static public void main(String[] args)
 	{
@@ -34,7 +34,7 @@ public class Main {
 		for (int i = 0; i< 10; i++)
 		{
 			//IntElement intElement = new IntElement(dtemp--);
-			IElement intElement = new IntElement(rand.nextInt(10000));
+			IElement intElement = new FloatElement((float)rand.nextInt(10000), "str");
 			list.add(intElement);
 		}
 

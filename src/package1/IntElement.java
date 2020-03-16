@@ -48,7 +48,6 @@ public class IntElement implements IElement<Integer>
 	Integer value;
 
 	/**
-	 * @param first number
 	 * @param second second number;
 	 * @return -1 if the is smaller, 0 if equal, 1 if is greater.
 	 */

@@ -109,6 +109,10 @@ public class IntSorter extends AbstractIntSorter
         return i+1;
     }
 
+    /**
+     * Print list of IntElement.
+     * @param arr list of IntElement
+     */
     private static void printArray(IntElement[] arr)
     {
     	// Print list
@@ -127,6 +131,10 @@ public class IntSorter extends AbstractIntSorter
 		}
     }
 
+    /**
+     * Print array of int
+     * @param arr Array of int
+     */
     private static void printArray(int[] arr)
     {
     	// Print list

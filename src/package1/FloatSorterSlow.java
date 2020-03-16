@@ -7,19 +7,19 @@ public class FloatSorterSlow extends AbstractFloatSorter {
 	 * @see package1.AbstractIntSorter#solve(java.util.List)
 	 * Sorting function.
 	 * @param list List of Integer to sort.
-     * @return List<IntElement> List of sorted elements.
+     * @return List&lt;IntElement&gt; List of sorted elements.
 	 */
 	@Override
 	public List<IntElement> solve(List<IntElement> list) {
 		// TODO Auto-generated method stub
 		return list;
 	}
-	
+
 	/**
 	 * @see package1.AbstractFloatSorter#solve(java.util.List)
 	 * Sorting function.
 	 * @param list List of variables to sort
-     * @return List<IElement> List of sorted elements.
+     * @return List&lt;IElement&gt; List of sorted elements.
 	 */
 	@Override
 	public List<IElement> solve2(List<IElement> list) {

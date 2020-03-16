@@ -17,7 +17,6 @@ public interface IElement<T extends Number> {
 	public T getValue();
 
 	/**
-	 * @param first number
 	 * @param second second number;
 	 * @return -1 if the is smaller, 0 if equal, 1 if is greater.
 	 */
