@@ -46,4 +46,26 @@ public class FloatElement implements IElement<Float> {
 	 * Main value of class.
 	 */
 	private Float value;
+
+	/**
+	 * @param first number
+	 * @param second second number;
+	 * @return -1 if the is smaller, 0 if equal, 1 if is greater.
+	 */
+	@Override
+	public int compare(Float second)
+	{
+		if (this.getValue() > second)
+		{
+			return -1;
+		}
+		else if (this.getValue() == second)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
 }

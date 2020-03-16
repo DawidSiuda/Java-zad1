@@ -4,7 +4,7 @@ package package1;
  * @author Dawid
  *
  */
-public class IntElement implements IElement<Integer> 
+public class IntElement implements IElement<Integer>
 {
 	/**
 	 * Default constructor.
@@ -37,7 +37,7 @@ public class IntElement implements IElement<Integer>
 	{
 		return value;
 	}
-	
+
 	/**
 	 *  Name of variable.
 	 */
@@ -46,4 +46,26 @@ public class IntElement implements IElement<Integer>
 	 *  Value.
 	 */
 	Integer value;
+
+	/**
+	 * @param first number
+	 * @param second second number;
+	 * @return -1 if the is smaller, 0 if equal, 1 if is greater.
+	 */
+	@Override
+	public int compare(Integer second)
+	{
+		if (this.getValue() > second)
+		{
+			return -1;
+		}
+		else if (this.getValue() == second)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
 }

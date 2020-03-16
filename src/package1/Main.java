@@ -34,7 +34,7 @@ public class Main {
 		for (int i = 0; i< 10; i++)
 		{
 			//IntElement intElement = new IntElement(dtemp--);
-			IntElement intElement = new IntElement(rand.nextInt(10000));
+			IElement intElement = new IntElement(rand.nextInt(10000));
 			list.add(intElement);
 		}
 
